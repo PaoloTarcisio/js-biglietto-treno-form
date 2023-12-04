@@ -13,3 +13,71 @@ img {
     width: 100%;
     display: block;
 }
+
+
+/* 
+    GENERAL
+*/
+
+div h2 {
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #B91550;
+}
+
+
+/* 
+    MAIN
+*/
+
+.my-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.calcolo-body {
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: #B91550;
+}
+
+.nome-cognome,
+.km-da-percorrere,
+.fascia-eta {
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 500;
+}
+
+label {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.calcolo-body-buttons {
+    padding-bottom: 15px;
+    margin: auto 15px;
+}
+
+.calcolo-body-buttons > button {
+    margin: auto 15px;
+    border-radius: 5px;
+    padding: 2px 3px;
+    color: #B91550;
+    font-weight: 500;
+}
+
+.info .biglietto-info {
+    background-color: white;
+}
+
+
+/* 
+    DEBUG
+*/
+

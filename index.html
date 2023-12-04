@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TEMPLATE HTML-CSS-JS</title>
+        <title>Calcolo Biglietto Treno</title>
 
 
         <!-- CSS -->
@@ -17,7 +17,76 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="debug">
+        <main>
+            <div class="my-container">
+                <div class="calcolo">
+                    <div class="calcolo-header text-center pt-5">
+                        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+                    </div>
+                    <div class="calcolo-body">
+                        <form action="">
+                            <div class="row justify-content-around m-4">
+                                <div class="col-auto nome-cognome">
+                                    <label for="NomeCognome">Nome e Cognome</label>
+                                    <input type="text" name="NomeCognome" id="NomeCognome">
+                                </div>
+                                <div class="col-auto km-da-percorrere">
+                                    <label for="Km">Km da percorrere</label>
+                                    <input type="text" name="Km" id="Km">
+                                </div>
+                                <div class="col-auto fascia-eta">
+                                    <label for="FasciaEta">Fascia d'età</label>
+                                    <select name="FasciaEta" id="FasciaEta">
+                                        <option value="1">Maggiorenne</option>
+                                        <option value="2">Minorenne</option>
+                                        <option value="3">Pensionato/a</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="calcolo-body-buttons text-center">
+                                <button type="button" id="MyButton">Genera</button>
+                                <button type="reset">Annulla</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="info text-center">
+                    <h2>IL TUO BIGLIETTO</h2>
+                    <div class="biglietto-info">
+                        <h4 class="text-start">DETTAGLIO PASSEGGERI</h4>
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="nominativo">
+                                    NOME PASSEGGERO
+                                    <div id="NomeCognomeInfo"></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Offerta</th>
+                                            <th scope="col">Carrozza</th>
+                                            <th scope="col">Codice CP</th>
+                                            <th scope="col">Costo Biglietto</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="tipologia"></td>
+                                            <td id="carrozza"></td>
+                                            <td id="codiceCP"></td>
+                                            <td id="costo"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         
 
         <!-- JAVASCRIPT -->
